@@ -13,5 +13,8 @@
 .idea/navEditor.xml
 
 node_modules
+node_modules/
 tempo.txt
 package-lock.json
+serveur_prod
+sources_assets

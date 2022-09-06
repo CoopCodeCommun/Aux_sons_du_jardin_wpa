@@ -21,7 +21,11 @@ export default defineConfig({
       base: "/",
       srcDir: "src",
       filename: "serviceWorker.ts",
-      includeAssets: ["/favicon-32x32.png"],
+      injectManifest: {
+        maximumFileSizeToCacheInBytes: 100000000, // 10MB = taille maxi d'un fichier de cache
+        globPatterns: ['assets/*'] // met en cache tous le dossier assets
+      },
+      includeAssets: ["/favicon-32x32.png", "/logo-192x192.png", "/logo-512x512.png"], // public
       strategies: "injectManifest",
       manifest: {
         name: "Aux sons du jardin",
