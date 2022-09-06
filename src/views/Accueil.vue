@@ -45,12 +45,23 @@
 
       <div class="slide-left">
         <p>
-          Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-          Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-          id varius justo euismod in. Curabitur egestas consectetur magna.
-          <br/>ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-          Fusce blandit ultrices sapien, Sed sodales venenatis arcu,
-          id varius justo euismod in. Curabitur egestas consectetur magna.
+          Aux sons du jardin :<br/>
+          Parce qu’il est peuplé d’espèces végétales et animales singulières,
+          chaque jardin a son chant qui lui est propre, 
+          ses mélodies qui varient en fonction de la météo,
+          de la saison, des essences qui y ont élu domicile.
+          Chaque jardin a sa propre signature acoustique. 
+          Et si, avec humilité, avec nos instruments, nous nous invitions sur cette scène
+          pour faire découvrir cette singularité, et en tirer une création originale.<br/><br/>
+          Fiche technique:<br/><br/>
+          Compositeur, prises de sons au Jardin, musicien, arrangeur: Chris Hagá <br/>
+          Ingénieur son, prises de sons instruments et voix en studio: Letoyo <br/>
+          Mixé et masteurisé par Letoyo au Studio Play Hit Up <br/>
+          Artistes invités : Sami Pageaux Waro, Julia Colmet <br/>
+          Développement de l’application <q>Aux sons du jardin</q>: Ti Billet. <br/><br/>
+
+          Résidence <q>Patrimoine et création</q> réalisée entre février et septembre 2022<br/>
+          au Jardin Botanique Des Mascarins, subventionnée par le Département Réunion.
           <br/>
         </p>
       </div>
@@ -66,7 +77,7 @@ import {ref} from 'vue'
 // routes
 import {useRouter} from 'vue-router'
 // medias: images en background
-import backgroundImage from "@/assets/images/chaga.png"
+import backgroundImage from "@/assets/images/Chris-Haga-premiere-page.jpg"
 import backgroundImageOne from "@/assets/images/one.jpg"
 import oiseau from "@/assets/images/oiseau_40x40.png"
 // icon

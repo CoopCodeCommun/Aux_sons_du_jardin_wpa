@@ -1,6 +1,6 @@
 <template>
   <audio autoplay>
-    <source src="@/assets/musiques/chant_zoizo.mp3">
+    <source src="@/assets/musiques/Maloya_Zoizo.mp3">
   </audio>
   <section id="pg1" class="overflow-hidden" :style="{ backgroundImage: `url(${backgroundImagePg1})` }">
     <div class="d-flex flex-row justify-content-center mt-2 mb-2">
@@ -15,24 +15,10 @@
 
     <div class="marquee-wrap-test">
       <p style="color: white;text-shadow: 3px 3px 4px black;">
-        <b> Test branche mike, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
-        <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.
-                  <b> Rogue, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
-        <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.<br/>
+        <b> Maloya Zoizo: </b><br/>
+        Ils sont là, ils chantent, ce sont des oiseaux réunionnais, chantent ils en créole ? Faisons un maloya avec eux.<br/> 
+        Il y a les couplets et refrains comme un maloya des humains <br/>
+        mais celui la c’est un Maloya Zoizo!!!<br/>
       </p><br/>
     </div>
 
@@ -46,7 +32,7 @@ import {useRouter} from 'vue-router'
 // bootstrap-icons-vue - prefixed with BIcon. For example, the icon pause-fill is exported as BIconPauseFill
 // icons list : https://icons.getbootstrap.com/
 import {BIconPlayFill, BIconPauseFill, BIconHouseFill} from 'bootstrap-icons-vue'
-import backgroundImagePg1 from "@/assets/images/sunset.jpg"
+import backgroundImagePg1 from "@/assets/images/Zozio.jpg"
 const router = useRouter()
 let buttonAction = ref('play')
 function toggleAction() {
