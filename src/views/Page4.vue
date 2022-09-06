@@ -1,6 +1,6 @@
 <template>
   <audio autoplay>
-    <source src="@/assets/musiques/test-pg1.mp3">
+    <source src="@/assets/musiques/Zezer.mp3">
   </audio>
   <section id="pg4" class="overflow-hidden" :style="{ backgroundImage: `url(${backgroundImagePg4})` }">
     <div class="d-flex flex-row justify-content-center mt-2 mb-2">
@@ -15,24 +15,13 @@
 
     <div class="marquee-wrap-test">
       <p style="color: white;text-shadow: 3px 3px 4px black;">
-        <b> Rogue, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
+        <b> Zezer (fonnker ek zoizo): </b><br/>
+        Artiste engagé de par mes textes et mes choix musicaux, <br/>
+        j’ai voulu dans cette oeuvre alerter en créole du danger que nous sommes, nous les êtres humains,<br/>
+        pour les oiseaux et en général pour l’écosystème de la Terre.<br/>
+        Les sons du jardin accompagnent ma voix et mes idées musicales s’harmonisent aux idées rythmiques des oiseaux (Merle maurice, martin).
         <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.
-                  <b> Rogue, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
-        <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.<br/>
+        
       </p><br/>
     </div>
 
@@ -46,7 +35,7 @@ import {useRouter} from 'vue-router'
 // bootstrap-icons-vue - prefixed with BIcon. For example, the icon pause-fill is exported as BIconPauseFill
 // icons list : https://icons.getbootstrap.com/
 import {BIconPlayFill, BIconPauseFill, BIconHouseFill} from 'bootstrap-icons-vue'
-import backgroundImagePg4 from "@/assets/images/marble.jpg"
+import backgroundImagePg4 from "@/assets/images/zezer.jpeg"
 const router = useRouter()
 let buttonAction = ref('play')
 function toggleAction() {

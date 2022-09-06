@@ -1,6 +1,6 @@
 <template>
   <audio autoplay>
-    <source src="@/assets/musiques/vent_violoncelle.mp3">
+    <source src="@/assets/musiques/La_pluie_en_mantra.mp3">
   </audio>
   <section id="pg2" class="overflow-hidden" :style="{ backgroundImage: `url(${backgroundImagePg2})` }">
     <div class="d-flex flex-row justify-content-center mt-2 mb-2">
@@ -15,24 +15,10 @@
 
     <div class="marquee-wrap-test">
       <p style="color: white;text-shadow: 3px 3px 4px black;">
-        <b> Rogue, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
+        <b> La pluie en mantra: </b><br/>
+        Les mains d’un percussionniste sont silencieuses jusqu'au moment de leurs rencontres avec la peau des instruments, 
         <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.
-                  <b> Rogue, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
-        <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.<br/>
+        ici les gouttes sont les mains et le feuillage les instruments.<br/>
       </p><br/>
     </div>
 
@@ -46,7 +32,7 @@ import {useRouter} from 'vue-router'
 // bootstrap-icons-vue - prefixed with BIcon. For example, the icon pause-fill is exported as BIconPauseFill
 // icons list : https://icons.getbootstrap.com/
 import {BIconPlayFill, BIconPauseFill, BIconHouseFill} from 'bootstrap-icons-vue'
-import backgroundImagePg2 from "@/assets/images/sunset.jpg"
+import backgroundImagePg2 from "@/assets/images/LaPluie.jpg"
 const router = useRouter()
 let buttonAction = ref('play')
 function toggleAction() {

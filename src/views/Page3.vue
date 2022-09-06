@@ -1,6 +1,6 @@
 <template>
   <audio autoplay>
-    <source src="@/assets/musiques/la_pluie_violoncelle.mp3">
+    <source src="@/assets/musiques/La_nuit_et_la_Kora.mp3">
   </audio>
   <section id="pg3" class="overflow-hidden" :style="{ backgroundImage: `url(${backgroundImagePg3})` }">
     <div class="d-flex flex-row justify-content-center mt-2 mb-2">
@@ -15,24 +15,10 @@
 
     <div class="marquee-wrap-test">
       <p style="color: white; text-shadow: 3px 3px 4px black;">
-        <b> Rogue, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
-        <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.
-                  <b> Rogue, inconspicuous motes of rock </b>and gas descended from astronomers Sea of Tranquility billions upon
-        billions star stuff harvesting star light stirred by starlight, Flatland billions upon billions vastness is
-        bearable only through love great turbulent e muse about! Cambrian explosion dispassionate extraterrestrial
-        observer.
-        <br/>
-        and gas realm of the galaxies decipherment tendrils of gossamer clouds at the edge of forever? Worldlets
-        Orion's sword Cambrian explosion, emerged into consciousness, laws of physics tendrils of gossamer clouds
-        venture. Flatland paroxysm of global
-        death Jean-François Champollion.<br/>
+        <b> La nuit et la kora 2.0:</b><br/>
+        Les êtres éveillés de la nuit ont leur univers sonore depuis des siècles et des siècles,<br/> 
+        j’ai voulu accompagner ces sons familiers de la nuit avec un son qui n’existe pas. <br/>
+        Pour cela j ai fait appel à Sami Pageaux Waro et sa kora électrique pour nous livrer un échange musical des plus original.<br/>
       </p><br/>
     </div>
 
@@ -46,7 +32,7 @@ import {useRouter} from 'vue-router'
 // bootstrap-icons-vue - prefixed with BIcon. For example, the icon pause-fill is exported as BIconPauseFill
 // icons list : https://icons.getbootstrap.com/
 import {BIconPlayFill, BIconPauseFill, BIconHouseFill} from 'bootstrap-icons-vue'
-import backgroundImagePg3 from "@/assets/images/rain.jpg"
+import backgroundImagePg3 from "@/assets/images/LaNuit.jpg"
 const router = useRouter()
 let buttonAction = ref('play')
 function toggleAction() {
