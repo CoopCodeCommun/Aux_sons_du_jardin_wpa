@@ -5,7 +5,7 @@ services:
     image: nginx
     restart: always
     volumes:
-      - ./build:/usr/share/nginx/html
+      - ./dist:/usr/share/nginx/html
       - ./nginx:/etc/nginx/conf.d
     labels:
       - traefik.enable=true
