@@ -14,7 +14,7 @@
 
 node_modules
 node_modules/
-tempo.txt
+tempo
 package-lock.json
 serveur_prod
 sources_assets

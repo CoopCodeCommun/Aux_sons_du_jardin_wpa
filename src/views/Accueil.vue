@@ -1,28 +1,34 @@
 <template>
   <ReloadPWA/>
-  <section id="intro" :style="{ backgroundImage: `url(${backgroundImage})` }"><br/>
-
-    <div style="margin-top: 130px;">
-      <ScanQrcode :expected="expected" :qrbox="250" :fps="10" style="width: 400px;height: 400px;" @resultat="onScan"/>
-        <div class="d-flex flex-row justify-content-center align-items-center mt-2">
-          <img :src="oiseau" class="ms-1 me-1" role="button" @click="router.push('/Page1')">
-          <img :src="oiseau" class="ms-1 me-1" role="button" @click="router.push('/Page2')">
-          <img :src="oiseau" class="ms-1 me-1" role="button" @click="router.push('/Page3')">
-          <img :src="oiseau" class="ms-1 me-1" role="button" @click="router.push('/Page4')">
-          <img :src="oiseau" class="ms-1 me-1" role="button" @click="router.push('/Page5')">
-        </div>
-      <footer class="mt-5">
-        <a href="#one">
-          <button type="button" class="btn bg-transparent" style='font-size: 25px; border-color:white; color:white;'>
-            <BIconArrowDown/>
-          </button>
-        </a>
-      </footer>
+  <section id="intro">
+    <div class="section-header d-flex justify-content-around">
+      <img class="section-header-logo  d-flex justify-content-center align-items-center" :src="logo">
+      <div class="section-header-titre  d-flex justify-content-center align-items-center">Aux sons du jardin</div>
     </div>
+    <div class="section-content position-relative mb-1" :style="{ backgroundImage: `url(${backgroundImage})` }">
+      <div class="position-absolute bottom-0 start-0 w-100 pb-3">
+        <div class="w-100 d-flex justify-content-center">
+          <ScanQrcode :expected="expected" :qrbox="250" :fps="10" style="width: 400px;height: 400px;"
+                      @resultat="onScan"/>
+        </div>
+        <div class="d-flex flex-row justify-content-around align-items-center mt-2">
+          <img :src="oiseau" role="button" @click="router.push('/Page1')">
+          <img :src="oiseau" role="button" @click="router.push('/Page2')">
+          <img :src="oiseau" role="button" @click="router.push('/Page3')">
+          <img :src="oiseau" role="button" @click="router.push('/Page4')">
+          <img :src="oiseau" role="button" @click="router.push('/Page5')">
+        </div>
+      </div>
+    </div>
+    <footer class="section-footer d-flex justify-content-between align-items-center">
+      <img :src="logoRegionReunion">
+      <a href="#one" class="btn bg-transparent rounded-circle text-white border-white fs-2">
+        <BIconArrowDown/>
+      </a>
+      <img :src="logoJardinBotaniqueReunion">
+    </footer>
   </section>
 
-  <!-- <section id="one" class="main style2 right dark fullscreen"
-           :style="{ backgroundImage: `url(${backgroundImageOne})` }"> -->
   <section id="one" class="main style2 right  fullscreen">
     <div class="content-style2">
       <div class="slide-right">
@@ -67,8 +73,10 @@ import {ref} from 'vue'
 // routes
 import {useRouter} from 'vue-router'
 // medias: images en background
-import backgroundImage from "@/assets/images/Chris-Haga-premiere-page.jpg"
-// import backgroundImageOne from "@/assets/images/one-800x421.jpg"
+import backgroundImage from "@/assets/images/chris_haga-800x967.jpg"
+import logo from "@/assets/images/chris_haga_logo-68x82.png"
+import logoRegionReunion from "@/assets/images/logo_region-reunion-150x41.png"
+import logoJardinBotaniqueReunion from "@/assets/images/logo-mascarin-jardin-botanique-148x50.jpg"
 import oiseau from "@/assets/images/oiseau_40x40.png"
 // icon
 import {BIconArrowDown} from 'bootstrap-icons-vue'
@@ -106,25 +114,60 @@ function onScan(qrCodeMessage) {
 
 <style>
 #intro {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
   background-size: cover;
+  background-image: linear-gradient(#282658, #6f4b95);
 }
 
 /*    2iem page accueil! */
 #one {
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-image: linear-gradient( #0A0D6D, #542740);
+  background-image: linear-gradient(#282658, #6f4b95);
+  color: #ffffff !important;
+  overflow-y: auto;
 }
+
+.section-header {
+  width: 100%;
+  height: 20%;
+}
+
+.section-header-logo {
+  /*width: 30%;*/
+  height: 100%;
+}
+
+.section-header-titre {
+  /*width: 70%;*/
+  height: 100%;
+  color: #f57199;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section-content {
+  width: 100%;
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-footer {
+  width: 100%;
+  height: 10%;
+  padding: 0 4px;
+}
+
 
 .content-style2 {
   margin: auto;
-  width: 60%;
-  background: #fff;
+  width: 100%;
   padding: 10%;
   overflow: hidden;
   box-shadow: 0 0 25px #000;

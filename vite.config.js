@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   build: {
-    minify: false // <= dev
+   minify: true // <= prod
   },
   plugins: [
     vue(),
@@ -25,20 +25,27 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 100000000, // 10MB = taille maxi d'un fichier de cache
         globPatterns: ['assets/*'] // met en cache tous le dossier assets
       },
-      includeAssets: ["/favicon-32x32.png", "/logo-192x192.png", "/logo-512x512.png"], // public
+      // includeAssets: ["/favicon-32x32.png", "/logo-192x192.png", "/logo-512x512.png"],
       strategies: "injectManifest",
       manifest: {
-        name: "Aux sons du jardin",
-        short_name: "Aux sons du jardin",
-        theme_color: "#ffffff",
-        start_url: "/",
-        display: "standalone",
-        background_color: "#ffffff",
+        "name": "Aux sons du jardin",
+        "short_name": "Aux sons du jardin",
+        "start_url": "/index.html",
+        "display": "standalone",
+        "background_color": "white",
+        "theme_color": "white",
+        "orientation": "portrait-primary",
         icons: [
+          {
+            src: "/logo-96x96.png",
+            type: "image/png",
+            sizes: "96x96"
+          },
           {
             src: "logo-192x192.png",
             sizes: "192x192",
             type: "image/png",
+            purpose: "any maskable",
           },
           {
             src: "/logo-512x512.png",
@@ -48,8 +55,7 @@ export default defineConfig({
           {
             src: "logo-512x512.png",
             sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
+            type: "image/png"
           },
         ]
       }
