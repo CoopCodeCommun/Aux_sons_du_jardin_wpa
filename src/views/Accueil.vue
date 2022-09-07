@@ -21,8 +21,9 @@
     </div>
   </section>
 
-  <section id="one" class="main style2 right dark fullscreen"
-           :style="{ backgroundImage: `url(${backgroundImageOne})` }">
+  <!-- <section id="one" class="main style2 right dark fullscreen"
+           :style="{ backgroundImage: `url(${backgroundImageOne})` }"> -->
+  <section id="one" class="main style2 right  fullscreen">
     <div class="content-style2">
       <div class="slide-right">
         <header>
@@ -67,7 +68,7 @@ import {ref} from 'vue'
 import {useRouter} from 'vue-router'
 // medias: images en background
 import backgroundImage from "@/assets/images/Chris-Haga-premiere-page.jpg"
-import backgroundImageOne from "@/assets/images/one-800x421.jpg"
+// import backgroundImageOne from "@/assets/images/one-800x421.jpg"
 import oiseau from "@/assets/images/oiseau_40x40.png"
 // icon
 import {BIconArrowDown} from 'bootstrap-icons-vue'
@@ -117,9 +118,7 @@ function onScan(qrCodeMessage) {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
+  background-image: linear-gradient( #0A0D6D, #542740);
 }
 
 .content-style2 {
