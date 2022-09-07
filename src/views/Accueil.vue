@@ -29,40 +29,43 @@
     </footer>
   </section>
 
-  <section id="one" class="main style2 right  fullscreen">
+  <section id="one">
     <div class="content-style2">
-      <div class="slide-right">
-        <header>
-          <h2>Les compositions</h2>
-        </header>
-      </div>
 
-      <div class="line fade-in"></div>
+      <h2 style="text-align: center">Les compositions</h2>
+      <h4 style="margin-top: 1em">Aux sons du jardin.</h4>
 
-      <div class="slide-left">
-        <p>
-          Aux sons du jardin :<br/>
-          Parce qu’il est peuplé d’espèces végétales et animales singulières,
-          chaque jardin a son chant qui lui est propre,
-          ses mélodies qui varient en fonction de la météo,
-          de la saison, des essences qui y ont élu domicile.
-          Chaque jardin a sa propre signature acoustique.
-          Et si, avec humilité, avec nos instruments, nous nous invitions sur cette scène
-          pour faire découvrir cette singularité, et en tirer une création originale.<br/><br/>
-          Fiche technique:<br/><br/>
-          Compositeur, prises de sons au Jardin, musicien, arrangeur: Chris Hagá <br/>
-          Ingénieur son, prises de sons instruments et voix en studio: Letoyo <br/>
-          Mixé et masteurisé par Letoyo au Studio Play Hit Up <br/>
-          Artistes invités : Sami Pageaux Waro, Julia Colmet <br/>
-          Développement de l’application <q>Aux sons du jardin</q>: Ti Billet. <br/><br/>
+      <p>
+        Parce qu’il est peuplé d’espèces végétales et animales singulières,
+        chaque jardin a son chant qui lui est propre,
+        ses mélodies qui varient en fonction de la météo,
+        de la saison, des essences qui y ont élu domicile.
+        Chaque jardin a sa propre signature acoustique.
+        Et si, avec humilité, avec nos instruments, nous nous invitions sur cette scène
+        pour faire découvrir cette singularité, et en tirer une création originale.<br/><br/>
+      </p>
 
-          Résidence <q>Patrimoine et création</q> réalisée entre février et septembre 2022<br/>
-          au Jardin Botanique Des Mascarins, subventionnée par le Département Réunion.
-          <br/>
-        </p>
-      </div>
+      <h3 style="margin: 1.5em 0;">Crédits.</h3>
+      <h5>Chris Hagá</h5>
+      <p>Compositions, arrangements et prises de sons.</p>
+      <h5>Letoyo</h5>
+      <p>Ingénieur son studio. Prises de sons instruments et voix. Mixage et Mastering au Studio PLay Hit Up.</p>
+      <h5>Sami Pageaux Waro</h5>
+      <p>Kora.</p>
+      <h5>Julia Colmet</h5>
+      <p>Violoncelle.</p>
+      <h5>Coopérative CodeCommun</h5>
+      <p>Développement et conception.</p>
+
+      <h4 style="margin: 1.5em 0">Remerciements : </h4>
+      <h5>Département Réunion.</h5>
+      <h5>Jardin Botanique Des Mascarins.</h5>
+      <p>
+        Résidence <q>Patrimoine et création</q> réalisée entre février et
+        septembre 2022.
+      </p>
+
     </div>
-
   </section>
 </template>
 
@@ -127,9 +130,6 @@ function onScan(qrCodeMessage) {
   background-size: cover;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(#282658, #6f4b95);
-  color: #ffffff !important;
-  overflow-y: auto;
 }
 
 .section-header {
@@ -167,12 +167,13 @@ function onScan(qrCodeMessage) {
 
 .content-style2 {
   margin: auto;
-  width: 100%;
+  width: 90%;
+  background: #fff;
   padding: 10%;
   overflow: hidden;
   box-shadow: 0 0 25px #000;
   border: 1px solid #444;
-  text-align: center;
+  text-align: justify;
 }
 
 p {
