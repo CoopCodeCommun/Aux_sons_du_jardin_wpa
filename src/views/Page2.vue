@@ -3,21 +3,25 @@
     <source src="@/assets/musiques/La_pluie_en_mantra.mp3">
   </audio>
   <section id="pg2" class="overflow-hidden" :style="{ backgroundImage: `url(${backgroundImagePg2})` }">
-    <div class="d-flex flex-row justify-content-center mt-2 mb-2">
-      <div class="d-flex flex-column justify-content-center align-items-center container-icons-vue" role="button" @click="router.push('/')">
+    <div class="d-flex flex-row justify-content-center mt-5 mb-5">
+      <div class="d-flex flex-column justify-content-center align-items-center container-icons-vue" role="button"
+           @click="router.push('/')">
         <BIconHouseFill class="icons-vue1  t2-5rem"/>
       </div>
     </div>
 
-    <div class="marquee-wrap-test">
-      <p style="color: white;text-shadow: 3px 3px 4px black;">
-        <b> La pluie en mantra: </b><br/>
-        Les mains d’un percussionniste sont silencieuses jusqu'au moment de leurs rencontres avec la peau des instruments, 
-        <br/>
-        ici les gouttes sont les mains et le feuillage les instruments.<br/>
-      </p><br/>
+    <div class="bg-texte_page_secondaire">
+      <div class="texte_page_secondaire">
+        <h2> La pluie en mantra: </h2>
+        <p>
+          Les mains d’un percussionniste sont silencieuses jusqu'au moment de leurs rencontres avec la peau des
+          instruments,
+        </p>
+        <p>
+          ici les gouttes sont les mains et le feuillage les instruments.
+        </p>
+      </div>
     </div>
-
   </section>
 
 </template>
@@ -28,6 +32,7 @@ import {useRouter} from 'vue-router'
 // icons list : https://icons.getbootstrap.com/
 import {BIconHouseFill} from 'bootstrap-icons-vue'
 import backgroundImagePg2 from "@/assets/images/LaPluie-800x878.jpg"
+
 const router = useRouter()
 </script>
 

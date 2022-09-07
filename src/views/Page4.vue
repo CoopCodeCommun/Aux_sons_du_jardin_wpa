@@ -4,23 +4,29 @@
     <source :src="audioP4">
 
   </audio>
-  <section id="pg4" class="overflow-hidden" :style="{ backgroundImage: `url(${backgroundImagePg4})` }">
-    <div class="d-flex flex-row justify-content-center mt-2 mb-2">
-      <div class="d-flex flex-column justify-content-center align-items-center container-icons-vue" role="button" @click="router.push('/')">
+  <section id="pg4" class="overflow-hidden section_bg" :style="{ backgroundImage: `url(${backgroundImagePg4})` }">
+    <div class="d-flex flex-row justify-content-center mt-5 mb-5">
+      <div class="d-flex flex-column justify-content-center align-items-center container-icons-vue" role="button"
+           @click="router.push('/')">
         <BIconHouseFill class="icons-vue1  t2-5rem"/>
       </div>
     </div>
 
-    <div class="marquee-wrap-test">
-      <p style="color: white;text-shadow: 3px 3px 4px black;">
-        <b> Zezer (fonnker ek zoizo): </b><br/>
-        Artiste engagé de par mes textes et mes choix musicaux, <br/>
-        j’ai voulu dans cette oeuvre alerter en créole du danger que nous sommes, nous les êtres humains,<br/>
-        pour les oiseaux et en général pour l’écosystème de la Terre.<br/>
-        Les sons du jardin accompagnent ma voix et mes idées musicales s’harmonisent aux idées rythmiques des oiseaux (Merle maurice, martin).
-        <br/>
-        
-      </p><br/>
+    <div class="bg-texte_page_secondaire">
+      <div class="texte_page_secondaire">
+        <h2> Zezer (fonnker ek zoizo): </h2>
+
+        <p>Engagé par mes textes et mes choix musicaux,
+          j’ai voulu dans cette oeuvre alerter en créole du danger que nous sommes,
+          nous les êtres humains,
+          pour les oiseaux et en général pour l’écosystème de la Terre.
+        </p>
+        <p>
+          Les sons du jardin accompagnent ma voix et mes idées musicales s’harmonisent aux idées rythmiques des oiseaux
+          (Merle maurice, martin).
+        </p>
+
+      </div>
     </div>
 
   </section>
