@@ -11,7 +11,7 @@ services:
       - traefik.enable=true
       - traefik.docker.network=frontend
       - traefik.http.routers.nginx4static.rule=Host(`haga.tibillet.fr`)
-      - traefik.http.routers.nginx4static.tls.certresolver=myresolver
+      - traefik.http.routers.nginx4static.tls.certresolver=tlsresolver
 
     ports:
       - 8012:80
