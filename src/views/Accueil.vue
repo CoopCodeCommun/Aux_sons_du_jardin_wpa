@@ -21,8 +21,9 @@
     </div>
   </section>
 
-  <section id="one" class="main style2 right dark fullscreen"
-           :style="{ backgroundImage: `url(${backgroundImageOne})` }">
+  <!-- <section id="one" class="main style2 right dark fullscreen"
+           :style="{ backgroundImage: `url(${backgroundImageOne})` }"> -->
+  <section id="one" class="main style2 right dark fullscreen">
     <div class="content-style2">
       <div class="slide-right">
         <header>
@@ -117,9 +118,7 @@ function onScan(qrCodeMessage) {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
+  background-image: linear-gradient( #0A0D6D, #542740);
 }
 
 .content-style2 {
