@@ -51,7 +51,7 @@
       <h5>Letoyo</h5>
       <p>Ingénieur son studio. Prises de sons instruments et voix. Mixage et Mastering au Studio PLay Hit Up.</p>
       <h5>Sami Pageaux Waro</h5>
-      <p>Kora.</p>
+      <p>Kora électrique.</p>
       <h5>Julia Colmet Daâge</h5>
       <p>Violoncelle.</p>
       <h5>Hackerspace CodeCommun</h5>
