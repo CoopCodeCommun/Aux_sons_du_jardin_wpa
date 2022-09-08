@@ -1,0 +1,32 @@
+{
+  "name": "Aux sons du jardin",
+  "short_name": "Aux sons du jardin",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/logo-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/logo-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
