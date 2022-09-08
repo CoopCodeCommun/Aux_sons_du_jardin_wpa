@@ -10,7 +10,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=frontend
-      - traefik.http.routers.nginx4static.rule=Host(`haga.tibillet.fr`)
+      - traefik.http.routers.nginx4static.rule=Host(`haga.tibillet.fr`) || Host(`haga.codecommun.re`)
       - traefik.http.routers.nginx4static.tls.certresolver=tlsresolver
 
     ports:
