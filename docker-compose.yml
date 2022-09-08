@@ -7,6 +7,7 @@ services:
     volumes:
       - ./dist:/usr/share/nginx/html
       - ./nginx:/etc/nginx/conf.d
+      - ./mime.types:/etc/nginx/mime.types
     labels:
       - traefik.enable=true
       - traefik.docker.network=frontend
