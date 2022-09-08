@@ -1,4 +1,4 @@
-const CACHE_NAME = 'auxSonsDuJardin-v3'
+const CACHE_NAME = 'auxSonsDuJardin-v1'
 const urlsToCache = [
   "/",
   "/logo-128x128.png",
