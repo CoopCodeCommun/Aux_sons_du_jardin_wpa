@@ -2,7 +2,7 @@
   <div v-if="offlineReady || needRefresh"
        class="flex flex-wrap md:flex-nowrap bg-pink-900 text-white text-sm px-6 py-2 justify-between align-middle"
        role="alert">
-    <div class="message mt-1">
+    <div class="text-dark message mt-1">
       <span v-if="offlineReady"> Application prête à fonctionner hors ligne </span>
       <span v-else>Il y a des changement dans l'application, cliquer pour la mise à jour.</span>
     </div>

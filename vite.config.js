@@ -27,13 +27,20 @@ export default defineConfig({
       },
       strategies: "injectManifest",
       manifest: {
-        "name": "Aux sons du jardin",
-        "short_name": "Aux sons du jardin",
-        "start_url": "/index.html",
-        "display": "standalone",
-        "background_color": "white",
-        "theme_color": "white",
-        "orientation": "portrait-primary",
+        name: "Aux sons du jardin",
+        short_name: "Aux sons du jardin",
+        start_url: "/index.html",
+        display: "standalone",
+        background_color: "white",
+        theme_color: "white",
+        orientation: "portrait-primary",
+        description: `Parce qu’il est peuplé d’espèces végétales et animales singulières,
+        chaque jardin a son chant qui lui est propre,
+        ses mélodies qui varient en fonction de la météo,
+        de la saison, des essences qui y ont élu domicile.
+        Chaque jardin a sa propre signature acoustique.
+        Et si, avec humilité, avec nos instruments, nous nous invitions sur cette scène
+        pour faire découvrir cette singularité, et en tirer une création originale.`,
         icons: [
          {
             src: "/logo-96x96.png",
