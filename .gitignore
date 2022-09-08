@@ -13,9 +13,9 @@
 .idea/navEditor.xml
 
 
-/tempo/
+/tempo
 package-lock.json
-/serveur_prod/
+/serveur_prod
 sources_assets
-/node_modules/
-/dist/
+/node_modules
+/dist
