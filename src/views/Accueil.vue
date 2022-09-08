@@ -54,7 +54,7 @@
       <p>Kora.</p>
       <h5>Julia Colmet Daâge</h5>
       <p>Violoncelle.</p>
-      <h5>Coopérative CodeCommun</h5>
+      <h5>Hackerspace CodeCommun</h5>
       <p>Développement et conception.</p>
 
       <h4 style="margin: 1.5em 0">Remerciements : </h4>
