@@ -1,5 +1,5 @@
 <template>
-  <ReloadPWA/>
+  <!-- <ReloadPWA/> -->
   <section id="intro">
     <div class="section-header d-flex justify-content-around">
       <img class="section-header-logo  d-flex justify-content-center align-items-center" :src="logo">
@@ -71,7 +71,7 @@
 
 <script setup>
 import ScanQrcode from '@/components/ScanQrcode.vue'
-import ReloadPWA from '@/components/ReloadPWA.vue'
+// import ReloadPWA from '@/components/ReloadPWA.vue'
 import {ref} from 'vue'
 // routes
 import {useRouter} from 'vue-router'
