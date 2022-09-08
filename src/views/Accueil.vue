@@ -12,11 +12,11 @@
                       @resultat="onScan"/>
         </div>
         <div class="d-flex flex-row justify-content-around align-items-center mt-2">
-          <img :src="oiseau" role="button" @click="router.push('/Page1')">
-          <img :src="oiseau" role="button" @click="router.push('/Page2')">
-          <img :src="oiseau" role="button" @click="router.push('/Page3')">
-          <img :src="oiseau" role="button" @click="router.push('/Page4')">
-          <img :src="oiseau" role="button" @click="router.push('/Page5')">
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage1})` }" @click="router.push('/Page1')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage2})` }" @click="router.push('/Page2')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage3})` }" @click="router.push('/Page3')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage4})` }" @click="router.push('/Page4')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage5})` }" @click="router.push('/Page5')"></div>
         </div>
       </div>
     </div>
@@ -80,8 +80,12 @@ import backgroundImage from "@/assets/images/chris_haga-800x967.jpg"
 import logo from "@/assets/images/chris_haga_logo-68x82.png"
 import logoRegionReunion from "@/assets/images/logo_region-reunion-150x41.png"
 import logoJardinBotaniqueReunion from "@/assets/images/logo-mascarin-jardin-botanique-148x50.jpg"
-import oiseau from "@/assets/images/oiseau_40x40.png"
 // icon
+import iconPage1 from "@/assets/images/PailleEnQueue-p1.png"
+import iconPage2 from "@/assets/images/goutte-eau-p2.png"
+import iconPage3 from "@/assets/images/Nuit-p3.png"
+import iconPage4 from "@/assets/images/LogoChris-p4.png"
+import iconPage5 from "@/assets/images/LeVent-p5.png"
 import {BIconArrowDown} from 'bootstrap-icons-vue'
 
 const router = useRouter()
@@ -164,6 +168,10 @@ function onScan(qrCodeMessage) {
   padding: 0 4px;
 }
 
+.icons-zone-taille {
+  width: 46px;
+  height: 46px;
+}
 
 .content-style2 {
   margin: auto;

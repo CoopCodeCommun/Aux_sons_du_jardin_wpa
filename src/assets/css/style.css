@@ -194,6 +194,8 @@ button:focus-visible {
     color: white;
 }
 
+
+
 @supports (transform:translate3d(0px,0px,0px)) {
     .marquee-wrap {
         overflow: hidden;
