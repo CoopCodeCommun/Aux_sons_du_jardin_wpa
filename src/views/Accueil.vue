@@ -12,11 +12,18 @@
                       @resultat="onScan"/>
         </div>
         <div class="d-flex flex-row justify-content-around align-items-center mt-2">
-          <img :src="oiseau" role="button" @click="router.push('/Page1')">
-          <img :src="oiseau" role="button" @click="router.push('/Page2')">
-          <img :src="oiseau" role="button" @click="router.push('/Page3')">
-          <img :src="oiseau" role="button" @click="router.push('/Page4')">
-          <img :src="oiseau" role="button" @click="router.push('/Page5')">
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage1})` }" @click="router.push('/Page1')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage2})` }" @click="router.push('/Page2')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage3})` }" @click="router.push('/Page3')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage4})` }" @click="router.push('/Page4')"></div>
+          <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage5})` }" @click="router.push('/Page5')"></div>
+          <!--
+          <img :src="iconPage1" role="button" class="position-absolute top-0 start-0" @click="router.push('/Page1')">
+          <img :src="iconPage2" role="button" @click="router.push('/Page2')">
+          <img :src="iconPage3" role="button" @click="router.push('/Page3')">
+          <img :src="iconPage4" role="button" @click="router.push('/Page4')">
+          <img :src="iconPage5" role="button" @click="router.push('/Page5')">
+          -->
         </div>
       </div>
     </div>
@@ -40,7 +47,7 @@
       <div class="line fade-in"></div>
 
       <div class="slide-left">
-        <p>
+        <p  class="text-white">
           Aux sons du jardin :<br/>
           Parce qu’il est peuplé d’espèces végétales et animales singulières,
           chaque jardin a son chant qui lui est propre,
@@ -77,7 +84,11 @@ import backgroundImage from "@/assets/images/chris_haga-800x967.jpg"
 import logo from "@/assets/images/chris_haga_logo-68x82.png"
 import logoRegionReunion from "@/assets/images/logo_region-reunion-150x41.png"
 import logoJardinBotaniqueReunion from "@/assets/images/logo-mascarin-jardin-botanique-148x50.jpg"
-import oiseau from "@/assets/images/oiseau_40x40.png"
+import iconPage1 from "@/assets/images/PailleEnQueue-p1.png"
+import iconPage2 from "@/assets/images/goutte-eau-p2.png"
+import iconPage3 from "@/assets/images/Nuit-p3.png"
+import iconPage4 from "@/assets/images/LogoChris-p4.png"
+import iconPage5 from "@/assets/images/LeVent-p5.png"
 // icon
 import {BIconArrowDown} from 'bootstrap-icons-vue'
 
@@ -116,18 +127,16 @@ function onScan(qrCodeMessage) {
 #intro {
   width: 100%;
   height: 100vh;
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
   background-size: cover;
   background-image: linear-gradient(#282658, #6f4b95);
 }
 
 /*    2iem page accueil! */
 #one {
-  background-size: cover;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(#282658, #6f4b95);
+  background-size: cover;
+  background-image: linear-gradient(#6f4b95, #282658);
   color: #ffffff !important;
   overflow-y: auto;
 }
@@ -152,7 +161,7 @@ function onScan(qrCodeMessage) {
 
 .section-content {
   width: 100%;
-  height: 70%;
+  height: 69%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,10 +169,15 @@ function onScan(qrCodeMessage) {
 
 .section-footer {
   width: 100%;
-  height: 10%;
-  padding: 0 4px;
+  height: 11%;
+  padding: 4px;
 }
 
+
+.icons-zone-taille {
+  width: 46px;
+  height: 46px;
+}
 
 .content-style2 {
   margin: auto;
