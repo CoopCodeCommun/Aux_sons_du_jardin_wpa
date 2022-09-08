@@ -52,7 +52,7 @@
       <p>Ingénieur son studio. Prises de sons instruments et voix. Mixage et Mastering au Studio PLay Hit Up.</p>
       <h5>Sami Pageaux Waro</h5>
       <p>Kora.</p>
-      <h5>Julia Colmet</h5>
+      <h5>Julia Colmet Daâge</h5>
       <p>Violoncelle.</p>
       <h5>Coopérative CodeCommun</h5>
       <p>Développement et conception.</p>
