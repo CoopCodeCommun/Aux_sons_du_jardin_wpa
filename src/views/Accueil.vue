@@ -77,7 +77,8 @@ import {ref} from 'vue'
 import {useRouter} from 'vue-router'
 // medias: images en background
 import backgroundImage from "@/assets/images/chris_haga-800x967.jpg"
-import logo from "@/assets/images/chris_haga_logo-68x82.png"
+// import logo from "@/assets/images/chris_haga_logo-68x82.png"
+import logo from "@/assets/images/LogoChris.svg"
 import logoRegionReunion from "@/assets/images/logo_region-reunion-150x41.png"
 import logoJardinBotaniqueReunion from "@/assets/images/logo-mascarin-jardin-botanique-148x50.jpg"
 // icon
