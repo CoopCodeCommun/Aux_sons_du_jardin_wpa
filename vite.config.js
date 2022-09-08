@@ -25,7 +25,6 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 100000000, // 10MB = taille maxi d'un fichier de cache
         globPatterns: ['assets/*'] // met en cache tous le dossier assets
       },
-      // includeAssets: ["/favicon-32x32.png", "/logo-192x192.png", "/logo-512x512.png"],
       strategies: "injectManifest",
       manifest: {
         "name": "Aux sons du jardin",
@@ -36,13 +35,19 @@ export default defineConfig({
         "theme_color": "white",
         "orientation": "portrait-primary",
         icons: [
-          {
+         {
             src: "/logo-96x96.png",
             type: "image/png",
             sizes: "96x96"
           },
           {
-            src: "logo-192x192.png",
+            src: "/logo-128x128.png",
+            sizes: "128x128",
+            type: "image/png",
+            purpose: "any maskable",
+          },
+          {
+            src: "/logo-192x192.png",
             sizes: "192x192",
             type: "image/png",
             purpose: "any maskable",
@@ -51,12 +56,7 @@ export default defineConfig({
             src: "/logo-512x512.png",
             sizes: "512x512",
             type: "image/png",
-          },
-          {
-            src: "logo-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
-          },
+          }
         ]
       }
     })
