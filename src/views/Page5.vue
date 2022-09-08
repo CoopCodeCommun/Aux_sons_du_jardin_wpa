@@ -2,7 +2,7 @@
   <audio autoplay>
     <source src="@/assets/musiques/Le_vent_et_son_instrument.mp3">
   </audio>
-  <section id="pg5" class="overflow-hidden" :style="{ backgroundImage: `url(${backgroundImagePg5})` }">
+  <section id="pg5" class="scroll-y" :style="{ backgroundImage: `url(${backgroundImagePg5})` }">
     <div class="d-flex flex-row justify-content-center mt-5 mb-5">
       <div class="d-flex flex-column justify-content-center align-items-center container-icons-vue" role="button"
            @click="router.push('/')">

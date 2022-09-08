@@ -17,13 +17,6 @@
           <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage3})` }" @click="router.push('/Page3')"></div>
           <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage4})` }" @click="router.push('/Page4')"></div>
           <div class="btn bg-transparent rounded-circle border-white icons-zone-taille overflow:hidden" :style="{ backgroundImage: `url(${iconPage5})` }" @click="router.push('/Page5')"></div>
-          <!--
-          <img :src="iconPage1" role="button" class="position-absolute top-0 start-0" @click="router.push('/Page1')">
-          <img :src="iconPage2" role="button" @click="router.push('/Page2')">
-          <img :src="iconPage3" role="button" @click="router.push('/Page3')">
-          <img :src="iconPage4" role="button" @click="router.push('/Page4')">
-          <img :src="iconPage5" role="button" @click="router.push('/Page5')">
-          -->
         </div>
       </div>
     </div>
