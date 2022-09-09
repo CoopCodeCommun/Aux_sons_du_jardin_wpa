@@ -18,7 +18,7 @@ let offLine = ref(false)
 window.addEventListener('load', () => {
   if ('serviceWorker' in navigator) {
 
-    navigator.serviceWorker.register('/serviceWorkerListLess.js')
+    navigator.serviceWorker.register('/serviceWorker.js')
         .then((reg) => {
           // registration worked
           console.log('Enregistrement réussi');

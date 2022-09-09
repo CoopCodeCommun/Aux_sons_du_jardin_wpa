@@ -32,9 +32,9 @@ async function liste(racine) {
 
 async function chargerServiceWorkerListLess() {
   try {
-    const rawdata = fs.readFileSync('./serviceWorkerListLess.js')
+    const rawdata = fs.readFileSync('./serviceWorkerListLess.js', 'utf8').toString()
     const assets = await liste(directory)
-    fs.writeFileSync('./' + directory + '/serviceWorker.js', assets + rawdata)
+    fs.writeFileSync('./' + directory + '/serviceWorker.js', assets + rawdata, 'utf8')
   } catch (error) {
     console.log('Sauvegarde du service worker,', error)
   }
