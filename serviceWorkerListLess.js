@@ -68,6 +68,13 @@ self.addEventListener('fetch', event => {
       const resClone = res.clone()
       // console.log('-> fetch,', CACHE_NAME, ', resClone =', resClone)
       // Open cache
+      return caches.open(CACHE_NAME).then(function (cache) {
+        return cache.put(event.request, resClone).then(function () {
+          test()
+          return res
+        })
+      })
+      /*
       caches.open(CACHE_NAME)
         .then(cache => {
           // Add response to cache
@@ -75,6 +82,7 @@ self.addEventListener('fetch', event => {
           test()
         })
       return res
+       */
     }).catch(err => caches.match(event.request)
       .then((res) => {
         // hors ligne
