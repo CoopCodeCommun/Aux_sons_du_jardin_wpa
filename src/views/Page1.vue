@@ -11,9 +11,11 @@
       </div>
     </div>
 
-    <div class="bg-texte_page_secondaire">
-      <div class="texte_page_secondaire">
-        <h2> Maloya Zoizo: </h2>
+    <div class="zone-content d-flex flex-column align-items-center">
+      <div class="zone-content-title d-flex flex-row  align-items-center">
+        <h2>Maloya Zoizo</h2>
+      </div>
+      <div class="zone-content-p">
         <p>
           Ils sont là, ils chantent, ce sont des oiseaux réunionnais,
           chantent ils en créole ? Faisons un maloya avec

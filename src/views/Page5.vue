@@ -10,9 +10,11 @@
       </div>
     </div>
 
-    <div class="bg-texte_page_secondaire">
-      <div class="texte_page_secondaire">
-        <h2> Le vent et son instrument : </h2>
+    <div class="zone-content d-flex flex-column align-items-center">
+      <div class="zone-content-title d-flex flex-row  align-items-center">
+        <h2>Le vent et son instrument</h2>
+      </div>
+      <div class="zone-content-p">
         <p>
           Le son du vent n’existe que s’ il est en contact avec une autre matière.
           Les arbres, les bambous…

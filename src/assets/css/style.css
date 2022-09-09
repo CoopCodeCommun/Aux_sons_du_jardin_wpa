@@ -177,34 +177,42 @@ button:focus-visible {
 }
 
 .zone-content {
-  width: 100%;
+  margin: 1em;
   height: 80%;
   text-shadow: 3px 3px 3px black;
-  opacity: 1;
   background: rgba(0, 0, 0, 0.3);
 }
 
 .zone-content-title {
+  margin-top: 0.4em;
   width: 90%;
   height: 10%;
   color: white;
+  font-size: 45px;
+  line-height: 1.6;
 }
 
 .zone-content-p {
+  margin-top: 0.1em;
+
   width: 90%;
   height: 88%;
   overflow-x: hidden;
   overflow-y: auto;
+  text-align: justify;
+  font-size: 45px;
+  line-height: 1.6;
+
 }
 
 .zone-content-p p {
   color: white;
 }
 
-
 .bg-texte_page_secondaire {
-  /*margin: 1em;*/
-  /*padding: 0.2em;*/
+  margin: 1em;
+  padding: 0.2em;
+  height: 80%;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -226,7 +234,6 @@ button:focus-visible {
   font-size: 45px;
   line-height: 1.6;
 }
-
 
 .texte_page_secondaire p {
   color: white;

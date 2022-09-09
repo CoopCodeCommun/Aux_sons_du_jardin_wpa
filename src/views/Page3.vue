@@ -10,9 +10,11 @@
       </div>
     </div>
 
-    <div class="bg-texte_page_secondaire">
-      <div class="texte_page_secondaire">
-        <h2> La nuit et la kora 2.0:</h2>
+    <div class="zone-content d-flex flex-column align-items-center">
+      <div class="zone-content-title d-flex flex-row  align-items-center">
+        <h2>La nuit et la kora</h2>
+      </div>
+      <div class="zone-content-p">
         <p>
           Les êtres éveillés de la nuit ont leur univers sonore depuis des siècles.
         </p>
