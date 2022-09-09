@@ -12,3 +12,4 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ```
 npm run build && node composeServiceWorker.js dist 12
 ```
+build le front et ensuite compose le service worker qui gère le hors connexion
