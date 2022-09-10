@@ -17,40 +17,29 @@ let offLine = ref(false)
 // mise en place du service worker
 window.addEventListener('load', () => {
   if ('serviceWorker' in navigator) {
+    const bc = new BroadcastChannel('appChannel')
 
     navigator.serviceWorker.register('/serviceWorker.js')
         .then((reg) => {
           // registration worked
-          console.log('Enregistrement réussi');
+          console.log('Enregistrement réussi')
+          // communication entre le service worker et l'app
+          bc.onmessage = (event) => {
+            console.log('-> message :', event)
+          }
         }).catch((error) => {
       // registration failed
       console.log('Erreur : ' + error);
     })
-
-    const bc = new BroadcastChannel('appChannel')
-    bc.onmessage = (event) => {
-      // console.log('réception message ', event)
-      if (event.data.status) {
-        if (event.data.nbFilesInCache >= event.data.nbFilesList) {
-          console.log('-> Cache ', event.data.version, 'Ok !')
-          cacheOk.value = true
-        }
-      }
-
-      if (event.data.offLine) {
-        offLine.value = true
-      }
-    }
-
   }
 })
 
-function supInfoCache() {
-  setTimeout(() => {
-    cacheOk.value = false
-  }, "1000")
+  function supInfoCache() {
+    setTimeout(() => {
+      cacheOk.value = false
+    }, "1000")
 
-}
+  }
 </script>
 
 <style scoped>
