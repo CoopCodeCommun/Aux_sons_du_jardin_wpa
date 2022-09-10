@@ -1,4 +1,4 @@
-let testNbFiles
+let testNbFiles, finDeTest = false
 
 // communication with app
 const bc = new BroadcastChannel('appChannel')
@@ -30,8 +30,11 @@ const test = async () => {
         test()
       })
     })
+  } else {
+    finDeTest = true
+    bc.postMessage({status: true, version: CACHE_NAME, nbFilesList: urlsToCache.length, nbFilesInCache})
   }
-  bc.postMessage({status: true, version: CACHE_NAME, nbFilesList: urlsToCache.length, nbFilesInCache})
+
 }
 
 self.addEventListener('activate', function (event) {
@@ -40,7 +43,9 @@ self.addEventListener('activate', function (event) {
   console.log('-> Activation du service worker', CACHE_NAME)
 
   // test
-  test()
+  if (finDeTest === false) {
+    test()
+  }
 
   // suppression des fichiers de cache non utilisés
   const cacheWhitelist = [CACHE_NAME]
@@ -70,7 +75,9 @@ self.addEventListener('fetch', event => {
       // Open cache
       return caches.open(CACHE_NAME).then(function (cache) {
         return cache.put(event.request, resClone).then(function () {
-          test()
+          if (finDeTest === false) {
+            test()
+          }
           return res
         })
       })
