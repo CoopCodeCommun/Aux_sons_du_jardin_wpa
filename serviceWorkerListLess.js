@@ -41,26 +41,14 @@ const cacheAll = async () => {
 
 // mise en cache des assets lors de l'installation
 self.addEventListener('install', event => {
+  self.skipWaiting()
   console.log('-> Installation du service worker', CACHE_NAME)
   // Wait until promise is finished
   if (cachingOk === false) {
     event.waitUntil(
       cacheAll()
     )
-  }  /*
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        cache.addAll(urlsToCache)
-          // When everything is set
-          .then(() => {
-            self.skipWaiting()
-            console.log('Cache chargé !')
-            bc.postMessage({endLoading: true, version: CACHE_NAME, nbFiles: urlsToCache.length})
-          })
-      })
-  )
-  */
+  }
 })
 
 const test = async () => {
@@ -81,12 +69,6 @@ self.addEventListener('activate', function (event) {
   clients.claim()
   console.log('-> Activation du service worker', CACHE_NAME)
 
-  /*
-  // test
-  if (finDeTest === false) {
-    test()
-  }
-*/
   // suppression des fichiers de cache non utilisés
   const cacheWhitelist = [CACHE_NAME]
   event.waitUntil(
@@ -115,21 +97,10 @@ self.addEventListener('fetch', event => {
       // Open cache
       return caches.open(CACHE_NAME).then(function (cache) {
         return cache.put(event.request, resClone).then(function () {
-          if (finDeTest === false) {
-            test()
-          }
           return res
         })
       })
-      /*
-      caches.open(CACHE_NAME)
-        .then(cache => {
-          // Add response to cache
-          cache.put(event.request, resClone)
-          test()
-        })
-      return res
-       */
+
     }).catch(err => caches.match(event.request)
       .then((res) => {
         // hors ligne
