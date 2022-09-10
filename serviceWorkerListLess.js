@@ -1,4 +1,4 @@
-let testNbFiles, finDeTest = false
+let testNbFiles
 
 // communication with app
 const bc = new BroadcastChannel('appChannel')
@@ -30,11 +30,8 @@ const test = async () => {
         test()
       })
     })
-  } else {
-    finDeTest = true
-    bc.postMessage({status: true, version: CACHE_NAME, nbFilesList: urlsToCache.length, nbFilesInCache})
   }
-
+    bc.postMessage({status: true, version: CACHE_NAME, nbFilesList: urlsToCache.length, nbFilesInCache})
 }
 
 self.addEventListener('activate', function (event) {
