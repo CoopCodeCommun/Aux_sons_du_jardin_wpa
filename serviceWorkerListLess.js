@@ -66,12 +66,17 @@ self.addEventListener('activate', function (event) {
   )
 })
 
+const testCache = async () => {
+  const keys = caches.keys()
+  console.log('keys =', keys)
+}
+
 self.addEventListener('fetch', event => {
   console.log('-> écoute fetch:')
   console.log('cachingOk =', cachingOk)
   if (cachingOk === false) {
     event.respondWith(
-      cacheAll()
+        testCache()
     )
   }
 })
