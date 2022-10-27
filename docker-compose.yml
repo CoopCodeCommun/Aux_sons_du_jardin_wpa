@@ -5,7 +5,7 @@ services:
     image: nginx
     restart: always
     volumes:
-      - ./dist:/usr/share/nginx/html
+      - ./link_redirect:/usr/share/nginx/html
       - ./nginx:/etc/nginx/conf.d
       - ./mime.types:/etc/nginx/mime.types
     labels:
